@@ -59,7 +59,7 @@ export default function AuthForm() {
               <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-                <input value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} type="text" placeholder="John Doe"
+                <input value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} type="text" placeholder="Name"
                   className={`w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${errors.name ? "border-red-500" : "border-gray-300"}`} />
               </div>
               {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -70,7 +70,7 @@ export default function AuthForm() {
             <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
             <div className="relative">
               <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-              <input value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} type="email" placeholder="john@example.com"
+              <input value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} type="email" placeholder="Enter your email"
                 className={`w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${errors.email ? "border-red-500" : "border-gray-300"}`} />
             </div>
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
